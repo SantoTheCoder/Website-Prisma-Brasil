@@ -308,3 +308,153 @@ a:hover {
         margin: 2rem 0;
     }
 }
+
+/* -------------------------------- */
+/* ESTILOS PARA A LISTAGEM DO BLOG  */
+/* -------------------------------- */
+.page-header {
+    text-align: center;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--cor-cinza-claro);
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+.article-card-blog {
+    background: var(--cor-branca);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.article-card-blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.article-card-blog .card-link {
+    display: block;
+    color: var(--cor-texto);
+    font-weight: normal;
+}
+
+.article-card-blog .card-link:hover {
+    color: var(--cor-texto);
+}
+
+.article-card-blog .card-link:hover h2 {
+    color: var(--cor-primaria);
+}
+
+.card-image-placeholder {
+    height: 200px;
+    background-color: #e9ecef;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h2 {
+    font-family: var(--font-titulos);
+    font-size: 1.35rem;
+    color: #222;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.article-meta {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-family: var(--font-titulos);
+}
+
+.excerpt {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* -------------------------------- */
+/* ESTILOS PARA O ARTIGO INDIVIDUAL */
+/* -------------------------------- */
+.main-artigo {
+    padding: 4rem 0;
+}
+
+.post-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.post-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.post-header h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.post-meta {
+    color: #555;
+    font-family: var(--font-titulos);
+}
+
+.post-meta .separator {
+    margin: 0 0.5rem;
+}
+
+.post-body {
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--cor-texto);
+}
+
+.post-body h2 {
+    font-family: var(--font-titulos);
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+    margin: 3rem 0 1.5rem 0;
+    line-height: 1.3;
+}
+
+.post-body p {
+    margin-bottom: 1.5rem;
+}
+
+.post-body a {
+    color: var(--cor-primaria);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.post-body blockquote {
+    border-left: 3px solid var(--cor-acento);
+    margin: 2.5rem 0;
+    padding-left: 1.5rem;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #555;
+}
