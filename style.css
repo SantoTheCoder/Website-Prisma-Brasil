@@ -193,3 +193,118 @@ a:hover {
         gap: 1rem;
     }
 }
+
+/* -------------------------------- */
+/* ESTILOS PARA A PÁGINA "SOBRE"    */
+/* -------------------------------- */
+
+/* Contêiner de texto para melhor legibilidade */
+.container-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.main-sobre h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.main-sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-sobre h3 {
+    font-family: var(--font-titulos);
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+    margin: 2rem 0 1rem 0;
+}
+
+.main-sobre p, .main-sobre li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.main-sobre strong {
+    font-weight: 700;
+}
+
+.main-sobre .content-block {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--cor-cinza-claro);
+}
+
+.main-sobre .content-block:last-of-type {
+    border-bottom: none;
+}
+
+/* Estilo específico para a seção de Curadoria */
+.curadoria-section {
+    background-color: var(--cor-cinza-claro);
+    padding: 4rem;
+    margin: 2rem -4rem; /* Cria efeito de largura total */
+    border-radius: var(--border-radius);
+}
+
+.principios-lista {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+}
+
+.principios-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.principios-lista svg {
+    flex-shrink: 0;
+    margin-top: 5px;
+    stroke: var(--cor-primaria);
+}
+
+/* Listas de itens dentro do conteúdo */
+.main-sobre ul:not(.principios-lista) {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+}
+
+/* Seção de CTA Final */
+.cta-final-section {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: var(--cor-cinza-claro);
+    margin-top: 4rem;
+}
+
+.cta-final-section h2 {
+    font-size: 2.25rem;
+    color: var(--cor-primaria);
+}
+
+.cta-final-section .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Estilo para o link de navegação ativo */
+.main-nav a.active {
+    color: var(--cor-acento);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Ajustes responsivos para a página Sobre */
+@media (max-width: 768px) {
+    .main-sobre h1 { font-size: 2.25rem; }
+    .main-sobre h2 { font-size: 1.75rem; }
+
+    .curadoria-section {
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+}
